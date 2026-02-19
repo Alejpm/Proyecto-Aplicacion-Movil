@@ -1,0 +1,23 @@
+.principal{
+  background:#1e293b;
+}
+
+#lista{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  margin-top:20px;
+}
+
+.card{
+  background:#334155;
+  padding:10px;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+.card img{
+  width:100%;
+  border-radius:10px;
+}
+
