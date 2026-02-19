@@ -1,0 +1,37 @@
+.detalle{
+  position:relative;
+  overflow:hidden;
+}
+
+#detalleBg{
+  position:absolute;
+  inset:0;
+  background-size:cover;
+  background-position:center;
+  filter:blur(25px);
+  transform:scale(1.2);
+  z-index:0;
+  opacity:0.6;
+  transition:background-image .4s ease;
+}
+
+.detalle::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.5);
+  z-index:1;
+}
+
+.detalle-contenido{
+  position:relative;
+  z-index:2;
+  padding:20px;
+}
+
+.detalle-contenido img{
+  width:100%;
+  border-radius:12px;
+  margin-bottom:15px;
+}
+

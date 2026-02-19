@@ -1,0 +1,25 @@
+.ruta{
+  position:relative;
+}
+
+#rutaBgGlobal{
+  position:fixed;
+  inset:0;
+  background-size:cover;
+  background-position:center;
+  filter:blur(25px);
+  transform:scale(1.1);
+  z-index:-1;
+  opacity:0.6;
+  transition:background-image .5s ease;
+}
+
+.ruta-contenido{
+  position:relative;
+  z-index:1;
+  background:rgba(0,0,0,0.5);
+  padding:20px;
+  border-radius:20px;
+}
+
+

@@ -1,0 +1,91 @@
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  font-family:'Segoe UI', sans-serif;
+}
+
+html,body{
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  color:white;
+  background:
+    radial-gradient(circle at 20% 20%, #1e293b 0%, transparent 40%),
+    radial-gradient(circle at 80% 80%, #7c2d12 0%, transparent 40%),
+    linear-gradient(135deg, #0f172a, #1e293b);
+}
+
+#viewport{
+  width:100vw;
+  height:100vh;
+  overflow:hidden;
+  position:relative;
+}
+
+.grid{
+  width:200vw;
+  height:200vh;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  position:absolute;
+  transition:transform .4s ease;
+}
+
+.screen-slot{
+  width:100vw;
+  height:100vh;
+  overflow-y:auto;
+}
+
+.screen{
+  padding:20px;
+  min-height:100vh;
+  padding-bottom:100px;
+  backdrop-filter: blur(6px);
+}
+
+button{
+  padding:10px 20px;
+  border:none;
+  border-radius:25px;
+  cursor:pointer;
+  background:linear-gradient(45deg,#2563eb,#7c3aed);
+  color:white;
+  margin-top:15px;
+  transition:transform .2s ease;
+}
+
+button:hover{
+  transform:scale(1.05);
+}
+
+img{
+  max-width:100%;
+  height:auto;
+  display:block;
+}
+h1, h2, h3 {
+  font-weight:700;
+  letter-spacing:1px;
+  margin-bottom:15px;
+}
+
+h1 {
+  font-size:28px;
+  background: linear-gradient(90deg,#ffffff,#38bdf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-size:22px;
+  border-left:4px solid #38bdf8;
+  padding-left:10px;
+}
+
+h3 {
+  font-size:18px;
+}
+
+
